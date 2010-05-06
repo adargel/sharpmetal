@@ -1,3 +1,5 @@
+require 'lib/solution_generator'
+
 describe SolutionGenerator do
   describe "#generate" do
 	context "when solution does not already exist" do
