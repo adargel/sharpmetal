@@ -1,3 +1,3 @@
 task :specs do
-  sh "spec ./specs/*_specs.rb"
+  sh "spec ./specs/*_specs.rb --format specdoc"
 end

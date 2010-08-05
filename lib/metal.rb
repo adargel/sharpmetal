@@ -7,10 +7,10 @@ module SharpMetal
     end
     
     def run(name, dependencies)
-  	  @output.out "Generating solution...\n"
+  	  @output.puts "Generating solution...\n"
       @generator.generate(name)
-	  @resolver.resolve(dependencies)
-  	  @output.out "Your solution has been generated.\n"
+	  @resolver.resolve(name, dependencies)
+  	  @output.puts "Your solution has been generated.\n"
     end
   end
 end

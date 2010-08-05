@@ -1,6 +1,6 @@
 require 'thor'
+require 'nu'
 require 'lib/cli'
 require 'lib/solution_generator'
 require 'lib/metal'
-
-SharpMetal::CLI.start
+require 'lib/nu_dependency_resolver'

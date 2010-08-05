@@ -1,4 +1,5 @@
-require 'lib/solution_generator'
+require 'specs/specs_helper'
+
 module SharpMetal
   describe SolutionGenerator do
     describe "#generate" do
