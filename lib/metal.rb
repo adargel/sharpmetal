@@ -1,15 +1,13 @@
 module SharpMetal
   class Metal
-    def initialize(args=ARGV, input=STDIN,output=STDOUT,generator=SolutionGenerator.new)
-      @input = input
+    def initialize(output=STDOUT,generator=SolutionGenerator.new)
   	  @output = output
-    	@args = args
   	  @generator = generator
     end
     
-    def run()
+    def run(name, dependencies)
   	  @output.out "Generating solution...\n"
-      @generator.generate(@args[0])
+      @generator.generate(name)
   	  @output.out "Your solution has been generated.\n"
     end
   end

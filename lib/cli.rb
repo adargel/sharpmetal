@@ -7,8 +7,7 @@ module SharpMetal
     desc "Solution NAME", "Create a new solution called NAME"
       method_options :with => :array
     def solution(name)
-      puts name
-      puts options[:with]
+	  Metal.new.run(name, options[:with])
     end
   end
 end
