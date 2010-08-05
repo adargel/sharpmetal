@@ -1,5 +1,5 @@
- require 'lib/metal'
- 
+require 'lib/metal'
+module SharpMetal 
  describe Metal do
    describe '#run' do
      before(:each) do
@@ -7,7 +7,7 @@
 	   @input = double('input')
 	   @output = double('output', :out => nil)
 	   @args = ["solution"]
-       @metal = Metal.new(@args, @input, @output, @generator)
+     @metal = Metal.new(@args, @input, @output, @generator)
 	 end
 	 it "outputs the generating solution message" do
 	   @output.should_receive(:out).with("Generating solution...\n")
@@ -23,3 +23,4 @@
 	 end
    end
  end
+end
